@@ -1,0 +1,2 @@
+# emoji
+AI emoji detect
