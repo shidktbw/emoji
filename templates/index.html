@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emotion Predictor</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+  
+    <form method="POST">
+        <h1>w_w</h1>
+        <input type="text" name="text" placeholder="love you >> positive">
+        <input type="submit" value="click!">
+    </form>
+    {% if emotion %}
+        <div class="result">
+            <p>Emotion: {{ emotion }}</p>
+        </div>
+    {% endif %}
+</body>
+</html>
