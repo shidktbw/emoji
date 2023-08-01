@@ -11,6 +11,7 @@ model = tf.keras.models.load_model('yep.h5')
 # load tokenizer
 with open('tokenizer.pickle', 'rb') as handle:
     tokenizer = pickle.load(handle)
+    
 # main
 @app.route('/', methods=['GET', 'POST'])
 def index():
